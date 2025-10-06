@@ -1,0 +1,327 @@
+/* Variabel Warna Arek Coffee (Hijau & Putih) */
+:root {
+    --primary-green: #38761d; /* Hijau Tua/Arek */
+    --light-green: #6aa84f; /* Hijau Sedang */
+    --bg-light: #f8f8f8; /* Off-white */
+    --text-dark: #222;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Mengganti font ke Poppins */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.main-header {
+    background: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px solid var(--primary-green); /* Garis bawah hijau */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-green); /* Logo berwarna hijau */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Gambar logo di header */
+.logo img {
+    width: 40px; /* Ukuran yang lebih wajar untuk logo di header */
+    height: 40px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--light-green); /* Hover link warna hijau muda */
+}
+
+/* HERO SECTION - Perubahan Utama di sini */
+.hero {
+    /* Hapus background: var(--primary-green); */
+    background-image: url('image(1).png'); /* Ganti dengan nama file gambar background Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 6rem 0;
+    color: #fff; /* Pastikan teks tetap putih di atas gambar background */
+    display: flex; /* Untuk memposisikan overlay di tengah vertikal jika diperlukan */
+    align-items: center;
+    justify-content: center;
+    min-height: 400px; /* Tinggi minimum untuk section hero */
+}
+
+.hero-content-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Latar belakang hitam transparan 40% */
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    max-width: 700px; /* Sesuaikan lebar overlay jika perlu */
+    margin: auto; /* Pusatkan overlay */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sedikit bayangan untuk menonjolkan */
+}
+
+
+.hero h1 {
+    font-size: 3.5rem; 
+    margin-bottom: 10px;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #f0f0f0;
+    margin-bottom: 3rem;
+}
+
+.cta-button {
+    background: #fff; 
+    color: var(--primary-green);
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background 0.3s, color 0.3s;
+    border: 2px solid #fff;
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* FEATURES (About Us) */
+.features {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-green);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: var(--bg-light); 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid var(--light-green);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    color: var(--primary-green);
+}
+
+/* Gambar di dalam feature card */
+.feature-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+/* TESTIMONIALS (Review) */
+.testimonials {
+    background: #e5ffe0; 
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-green);
+}
+
+.testimonial-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.testimonial-card .author {
+    font-weight: 700;
+    color: var(--light-green);
+}
+
+/* FOOTER */
+.main-footer {
+    background: var(--primary-green);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9em;
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.main-footer .social-links a:hover {
+    opacity: 0.8;
+}
+
+/* LOKASI SECTION - GAYA MAP PREVIEW */
+.location-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 0; 
+}
+
+.address {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.hours {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.gmaps-preview-container {
+    position: relative;
+    max-width: 800px; 
+    margin: 30px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #e0e0e0; 
+    min-height: 300px; 
+}
+
+.map-image {
+    width: 100%;
+    height: 100%; 
+    display: block;
+    object-fit: cover;
+}
+
+.map-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+
+.map-overlay p {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.map-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--primary-green); 
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.map-button span {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.map-button:hover {
+    background-color: var(--light-green); 
+}
+
+/* MEDIA QUERIES untuk Responsif */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+    }
+    .nav-links {
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content-overlay {
+        padding: 2rem 1rem; /* Sesuaikan padding untuk mobile */
+    }
+}
